@@ -3,10 +3,8 @@ import json
 import requests
 
 def get_live_token():
-    # อิงตามหน้าดูบอลที่คุณส่งมาจริงก่อนหน้านี้
     web_url = "https://atmflix.live" 
     
-    # อ้างอิงค่าจาก Request Headers จริงที่คุณส่งมาเป๊ะๆ เพื่อความเสถียร
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36',
         'Referer': 'https://atmflix.live/',
@@ -17,7 +15,6 @@ def get_live_token():
         response = requests.get(web_url, headers=headers, timeout=15)
         html_text = response.text
         
-        # ดึงคู่ Token ออกมา
         match = re.search(r'(nimblesessionid=[^&"\'\s]+&wmsAuthSign=[^"\'\s]+)', html_text)
         if match:
             return match.group(1)
@@ -29,7 +26,6 @@ def get_live_token():
     except Exception as e:
         print(f"Error fetching token: {e}")
         
-    # ค่าสำรองล่าสุดที่คุณส่งมา (กรณีกดรันแล้วดึงหน้าเว็บไม่สำเร็จในรอบนั้น)
     return "nimblesessionid=20666499&wmsAuthSign=c2VydmVyX3RpbWU9OC8yOS8yMDI2IDU6NTA6MzcgUE0maGFzaF92YWx1ZT16elhKUEU3K08wM0pIODJlakFobkVBPT0mdmFsaWRtaW51dGVzPTIw"
 
 def generate_w3u():
@@ -40,7 +36,7 @@ def generate_w3u():
         "station": [
             {
                 "name": "MonoMax 3",
-                "image": "https://google.com",
+                "image": "https://drive.google.com/uc?export=download&id=1XWfSp-4LeKJAGbII5uVYAnDB3oZHyRST",
                 "url": f"https://cdn2.stream.atmflix.live/atmflixlive/monomax-sports3/chunks.m3u8?{token_query}",
                 "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
                 "referer": "https://atmflix.live/",
@@ -48,7 +44,6 @@ def generate_w3u():
             }
         ]
     }
-    # บันทึกไฟล์ในชื่อ ATMFlix.w3u ตามที่คุณใช้งาน
     with open("ATMFlix.w3u", "w", encoding="utf-8") as f:
         json.dump(w3u_data, f, ensure_ascii=False, indent=2)
     print("Playlist updated successfully!")
