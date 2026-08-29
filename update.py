@@ -36,7 +36,7 @@ def generate_w3u():
         "station": [
             {
                 "name": "MonoMax 3",
-                "image": "",
+                "image": "https://atmflix.live/logo-square.png",
                 "url": f"https://cdn2.stream.atmflix.live/atmflixlive/monomax-sports3/chunks.m3u8?{token_query}",
                 "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
                 "referer": "https://atmflix.live/",
