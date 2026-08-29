@@ -20,7 +20,7 @@ def get_live_token():
             return f"nimblesessionid={session_match.group(1)}&wmsAuthSign={auth_match.group(1)}"
     except Exception as e:
         print(f"Error fetching token: {e}")
-    return "nimblesessionid=20665394&wmsAuthSign=c2VydmVyX3RpbWU9OC8yOS8yMDI2IDQ6MjI6NTEgUE0maGFzaF92YWx1ZT0zOWV0cWxEY3E2dWt3MWd0dnd6cld3PT0mdmFsaWRtaW51dGVzPTIw"
+    return "nimblesessionid=20665695&wmsAuthSign=c2VydmVyX3RpbWU9OC8yOS8yMDI2IDQ6Mzg6NDkgUE0maGFzaF92YWx1ZT1wejN5NVBYcWF6eXQrcWQ3cklTVlN3PT0mdmFsaWRtaW51dGVzPTIw"
 
 def generate_w3u():
     token_query = get_live_token()
