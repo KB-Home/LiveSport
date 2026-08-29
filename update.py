@@ -33,6 +33,7 @@ def generate_w3u():
                 "image": "https://drive.google.com/uc?export=download&id=1XWfSp-4LeKJAGbII5uVYAnDB3oZHyRST",
                 "url": f"https://cdn2.stream.atmflix.live/atmflixlive/monomax-sports3/chunks.m3u8?{token_query}",
                 "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+                "origin": "https://atmflix.live",
                 "referer": "https://atmflix.live/",
                 "info": "atmflix.live"
             }
