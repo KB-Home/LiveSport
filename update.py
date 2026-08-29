@@ -38,7 +38,7 @@ def generate_w3u():
             }
         ]
     }
-    with open("ATMFlix.w3u", "w", encoding="utf-8") as f:
+    with open("playlist.w3u", "w", encoding="utf-8") as f:
         json.dump(w3u_data, f, ensure_ascii=False, indent=2)
     print("Playlist updated successfully!")
 
