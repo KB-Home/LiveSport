@@ -9,14 +9,6 @@
       "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
       "referer": "https://atmflix.live/",
       "info": "atmflix.live"
-    },
-    {
-      "name": "MonoMax 4",
-      "image": "https://drive.google.com/uc?export=download&id=1XWfSp-4LeKJAGbII5uVYAnDB3oZHyRST",
-      "url": "https://cdn2.stream.atmflix.live/atmflixlive/monomax-sports4/chunks.m3u8?nimblesessionid=20665394&wmsAuthSign=c2VydmVyX3RpbWU9OC8yOS8yMDI2IDQ6MjI6NTEgUE0maGFzaF92YWx1ZT0zOWV0cWxEY3E2dWt3MWd0dnd6cld3PT0mdmFsaWRtaW51dGVzPTIw",
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-      "referer": "https://atmflix.live/",
-      "info": "atmflix.live"
     }
   ]
 }
