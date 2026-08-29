@@ -6,7 +6,7 @@ def get_live_token():
     web_url = "https://atmflix.live" 
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36',
-        'Referer': 'https://atmflix.live/'
+        'Referer': 'https://atmflix.live'
     }
     try:
         response = requests.get(web_url, headers=headers, timeout=15)
