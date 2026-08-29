@@ -28,4 +28,5 @@ jobs:
         git config --global user.email "bot@github.com"
         git add playlist.w3u
         git commit -m "Auto updated token" || exit 0
-        git push
+        git pull --rebase origin main
+        git push origin main
