@@ -28,12 +28,12 @@ def generate_w3u():
         "name": "ATMFLIX Live Sports",
         "author": "Auto Token Bot",
         "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
-        "referer": "https://atmflix.live",
+        "referer": "https://atmflix.live/",
         "station": [
             {
-                "name": "MonoMax 1",
-                "image": "https://google.com",
-                "url": f"https://atmflix.live?{token_query}",
+                "name": "MonoMax 3",
+                "image": "https://drive.google.com/uc?export=download&id=1XWfSp-4LeKJAGbII5uVYAnDB3oZHyRST",
+                "url": f"https://cdn2.stream.atmflix.live/atmflixlive/monomax-sports3/chunks.m3u8?{token_query}",
                 "info": "atmflix.live"
             }
         ]
