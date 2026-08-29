@@ -3,7 +3,7 @@ import json
 import requests
 
 def get_live_token():
-    web_url = "https://atmflix.live/football/638081" 
+    web_url = "https://atmflix.live" 
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36',
         'Referer': 'https://atmflix.live/'
@@ -20,7 +20,7 @@ def get_live_token():
             return f"nimblesessionid={session_match.group(1)}&wmsAuthSign={auth_match.group(1)}"
     except Exception as e:
         print(f"Error fetching token: {e}")
-    return "nimblesessionid=20664801&wmsAuthSign=c2VydmVyX3RpbWU9OC8yOS8yMDI2IDM6MzI6MDkgUE0maGFzaF92YWx1ZT1GS0s3M2EybFpmc1c4NWlWT09SQkZRPT0mdmFsaWRtaW51dGVzPTIw"
+    return "nimblesessionid=20665394&wmsAuthSign=c2VydmVyX3RpbWU9OC8yOS8yMDI2IDQ6MjI6NTEgUE0maGFzaF92YWx1ZT0zOWV0cWxEY3E2dWt3MWd0dnd6cld3PT0mdmFsaWRtaW51dGVzPTIw"
 
 def generate_w3u():
     token_query = get_live_token()
