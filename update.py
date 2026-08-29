@@ -30,7 +30,7 @@ def get_live_token():
         print(f"Error fetching token: {e}")
         
     # ค่าสำรองล่าสุดที่คุณส่งมา (กรณีกดรันแล้วดึงหน้าเว็บไม่สำเร็จในรอบนั้น)
-    return "nimblesessionid=20666434&wmsAuthSign=c2VydmVyX3RpbWU9OC8yOS8yMDI2IDU6NDM6MDAgUE0maGFzaF92YWx1ZT1FSEpiVGF5Q2VMWm5pQWRQQW5BMUtnPT0mdmFsaWRtaW51dGVzPTIw"
+    return "nimblesessionid=20666499&wmsAuthSign=c2VydmVyX3RpbWU9OC8yOS8yMDI2IDU6NTA6MzcgUE0maGFzaF92YWx1ZT16elhKUEU3K08wM0pIODJlakFobkVBPT0mdmFsaWRtaW51dGVzPTIw"
 
 def generate_w3u():
     token_query = get_live_token()
