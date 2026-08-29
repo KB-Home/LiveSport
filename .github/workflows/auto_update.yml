@@ -1,4 +1,4 @@
-name: Update Wiseplay Playlist
+name: Update ATMFlix Playlist
 on:
   schedule:
     - cron: '*/15 * * * *' # สั่งรันสคริปต์อัตโนมัติทุกๆ 15 นาที
