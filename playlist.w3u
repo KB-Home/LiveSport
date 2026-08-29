@@ -1,0 +1,14 @@
+{
+  "name": "ATMFLIX Live Sports",
+  "author": "Auto Token Bot",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "referer": "https://atmflix.live",
+  "station": [
+    {
+      "name": "MonoMax 1",
+      "image": "https://google.com",
+      "url": "https://atmflix.live?nimblesessionid=20661044&wmsAuthSign=c2VydmVyX3RpbWU9OC8yOS8yMDI2IDE6Mjk6MjggUE0maGFzaF92YWx1ZT1icWNrR0d4TUtVSTJUblVCemtSV2NBPT0mdmFsaWRtaW51dGVzPTIw",
+      "info": "atmflix.live"
+    }
+  ]
+}
