@@ -3,10 +3,10 @@ import json
 import requests
 
 def get_live_token():
-    web_url = "https://atmflix.live/football/638680" 
+    web_url = "https://atmflix.live" 
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36',
-        'Referer': 'https://atmflix.live'
+        'Referer': 'https://atmflix.live/'
     }
     try:
         response = requests.get(web_url, headers=headers, timeout=15)
@@ -20,7 +20,7 @@ def get_live_token():
             return f"nimblesessionid={session_match.group(1)}&wmsAuthSign={auth_match.group(1)}"
     except Exception as e:
         print(f"Error fetching token: {e}")
-    return "nimblesessionid=20666251&wmsAuthSign=c2VydmVyX3RpbWU9OC8yOS8yMDI2IDU6MjY6MjMgUE0maGFzaF92YWx1ZT1jbW1IMFVEeng0SndoOVdQVDVwcmFBPT0mdmFsaWRtaW51dGVzPTIw"
+    return "nimblesessionid=20666359&wmsAuthSign=c2VydmVyX3RpbWU9OC8yOS8yMDI2IDU6MzU6MTYgUE0maGFzaF92YWx1ZT1PVzlKbGw3YjNXWnRQMUNkNUxxUlRBPT0mdmFsaWRtaW51dGVzPTIw"
 
 def generate_w3u():
     token_query = get_live_token()
@@ -30,7 +30,7 @@ def generate_w3u():
         "station": [
             {
                 "name": "MonoMax 3",
-                "image": "https://drive.google.com/uc?export=download&id=1XWfSp-4LeKJAGbII5uVYAnDB3oZHyRST",
+                "image": "https://google.com",
                 "url": f"https://cdn2.stream.atmflix.live/atmflixlive/monomax-sports3/chunks.m3u8?{token_query}",
                 "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
                 "referer": "https://atmflix.live/",
