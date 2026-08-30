@@ -1,4 +1,4 @@
-name: Update ATMFlix Playlist
+name: Update doolive4k Playlist
 on:
   schedule:
     - cron: '*/15 * * * *' # สั่งรันสคริปต์อัตโนมัติทุกๆ 15 นาที
@@ -26,7 +26,7 @@ jobs:
       run: |
         git config --global user.name "Automated Bot"
         git config --global user.email "bot@github.com"
-        git add ATMFlix.w3u
+        git add doolive4k.w3u
         git commit -m "Auto updated token" || exit 0
         git pull --rebase origin main
         git push origin main
